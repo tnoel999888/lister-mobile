@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 import React from 'react'
 import { Tabs, Redirect } from "expo-router"
 import { icons } from "../../constants"
@@ -12,7 +12,7 @@ const TabIcon = ({ icon, color, name, focussed }) => {
                 tintColor={color}
                 className="w-6 h-6"
             />
-            <Text className={`${focused ? "font-psemibold" : "font-pregular"} text-xs`}>
+            <Text className={`${focussed ? "font-psemibold" : "font-pregular"} text-xs`}>
                 {name}
             </Text>
         </View>
@@ -24,6 +24,7 @@ const TabsLayout = () => {
         <Tabs
             screenOptions={{
                 tabBarShowLabel: false,
+                tabBarStyle: { backgroundColor: "#1F96F3" },
             }}
         >
             <Tabs.Screen 

@@ -4,6 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import { images } from '../../constants'
 import { CustomButton, FormField } from '../../components'
 import { Link } from "expo-router"
+// import { createUser } from "../../lib/appwrite"
 
 
 const SignUp = () => {
@@ -14,14 +15,16 @@ const SignUp = () => {
   })
   const [isSubmitting, setSubmitting] = useState(false);
 
-  const submit = () => {}
+  // const submit = () => {
+  //   createUser();
+  // }
 
   return (
     <SafeAreaView className="bg-primary h-full">
       <ScrollView>
         <View className="w-full justify-center min-h-[85vh] px-4 my-6">
           <Image source={images.logo} resizeMode="contain"className="w-[115px] h-[35px]" />
-          <Text className="test-2xl text-white text-semibold mt-10 font-psemibold">Sign Up to Aora</Text>
+          <Text className="test-2xl text-white text-semibold mt-10 font-psemibold">Sign Up to Lister</Text>
 
           <FormField 
             title="Username"

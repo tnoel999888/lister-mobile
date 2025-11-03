@@ -3,6 +3,7 @@
     "name": "sora",
     "slug": "sora",
     "version": "1.0.0",
+    "jsEngine": "hermes",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -14,7 +15,8 @@
     "scheme": "sora",
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "package": "com.eventhorizon.lister"
     },
     "android": {
       "adaptiveIcon": {
